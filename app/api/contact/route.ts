@@ -30,7 +30,7 @@ export async function POST(req: Request) {
       to,                            // string or string[]
       subject: `Portfolio: ${subject}`,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
-      reply_to: [email],             // ✅ correct field for Resend
+      replyTo: [email],             // ✅ correct field for Resend
     })
 
     if (error) {
