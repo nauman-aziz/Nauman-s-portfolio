@@ -59,7 +59,7 @@ export default function Hero() {
           <div className="mb-8" data-id="profile-image-container">
             <div className="relative inline-block" data-id="profile-image-wrapper">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+                src="/images/profilePicture.jpg"
                 alt="Muhammad Nauman"
                 className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-2xl mx-auto"
                 data-id="profile-image"
@@ -101,7 +101,7 @@ export default function Hero() {
               <Mail size={20} />
               <span>Hire Me</span>
             </a>
-            <a 
+            {/* <a 
               href="/resume.pdf" 
               download
               className="btn-secondary inline-flex items-center space-x-2"
@@ -109,13 +109,13 @@ export default function Hero() {
             >
               <Download size={20} />
               <span>Download Resume</span>
-            </a>
+            </a> */}
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6" data-id="social-links">
             <a
-              href="https://linkedin.com/in/muhammad-nauman"
+              href="https://www.linkedin.com/in/muhammad-nauman-57b6801ab/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-primary-600 transition-colors duration-300 transform hover:scale-110"
@@ -124,7 +124,7 @@ export default function Hero() {
               <Linkedin size={28} />
             </a>
             <a
-              href="https://github.com/muhammadnauman"
+              href="https://github.com/nauman-aziz"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-primary-600 transition-colors duration-300 transform hover:scale-110"

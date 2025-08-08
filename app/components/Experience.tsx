@@ -8,25 +8,25 @@ export default function Experience() {
       company: 'Techlogix',
       position: 'Senior Software Engineer',
       duration: 'Jul 2022 - Present',
-      location: 'Remote',
+      location: 'On site',
       projects: [
         {
           title: 'Generative AI for Health Care Projects',
           description: 'Collaborated with US AI Health Care products like AgentGPT, SecureGPT, BenefitsGPT, and ContractualGPT, enhancing AI technology implementations for Blue Cross Blue Shield.',
           technologies: ['Tailwind', 'React', 'Next.js', 'Context API', 'OpenAI', 'REST APIs', 'CI/CD', 'Flask'],
-          image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=250&fit=crop'
+          image: '/images/quantum_sim_mini_logo.png'
         },
         {
           title: 'Micro-Frontend Architecture Projects',
           description: 'Created micro frontends using React for clients like Toyota, Lufox, and others. Developed forms and validations with secure data handling.',
           technologies: ['React.ts', 'Node.js', 'Redux', 'TypeScript', 'REST APIs', 'CI/CD', 'Storybook'],
-          image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop'
+          image: '/images/atlas.png'
         },
         {
           title: 'Government Projects',
           description: 'Developed the Securities and Exchange Commission of Pakistan portal to facilitate complex legal interactions with robust security implementation.',
           technologies: ['.NET Core', 'SQL', 'Security Implementation', 'Validation'],
-          image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop'
+          image: '/images/secp.png'
         }
       ]
     },
@@ -99,7 +99,7 @@ export default function Experience() {
                         <img
                           src={project.image}
                           alt={project.title}
-                          className="w-full h-48 object-cover rounded-xl shadow-md"
+                          className="w-full h-48 object-contain rounded-xl shadow-md"
                           data-id={`project-img-${expIndex}-${projIndex}`}
                         />
                       </div>

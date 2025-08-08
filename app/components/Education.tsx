@@ -10,7 +10,7 @@ export default function Education() {
       duration: 'Sep 2018 - Jul 2022',
       grade: 'CGPA: 3.51',
       description: 'Comprehensive education in software engineering, algorithms, data structures, and modern web technologies.',
-      image: 'https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=250&fit=crop'
+      image: '/images/PUCIT.jpeg'
     },
     {
       institution: 'Knowledge Inn Preparatory School (KIPS)',
@@ -18,7 +18,7 @@ export default function Education() {
       duration: 'Sep 2016 - Jul 2018',
       grade: 'Grade: A+',
       description: 'Pre-engineering with focus on mathematics, physics, and computer science fundamentals.',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop'
+      image: '/images/kips.png'
     }
   ]
 

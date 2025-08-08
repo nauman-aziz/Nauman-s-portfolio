@@ -22,12 +22,12 @@ export default function Footer() {
   const socialLinks = [
     {
       name: 'LinkedIn',
-      href: 'https://linkedin.com/in/muhammad-nauman',
+      href: 'https://www.linkedin.com/in/muhammad-nauman-57b6801ab/',
       icon: Linkedin
     },
     {
       name: 'GitHub',
-      href: 'https://github.com/muhammadnauman',
+      href: 'https://github.com/nauman-aziz',
       icon: Github
     },
     {

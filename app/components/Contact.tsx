@@ -19,21 +19,28 @@ export default function Contact() {
     }))
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setStatus('sending')
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+  setStatus('sending')
 
-    // Simulate form submission
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      setStatus('success')
-      setFormData({ name: '', email: '', subject: '', message: '' })
-      setTimeout(() => setStatus('idle'), 3000)
-    } catch (error) {
-      setStatus('error')
-      setTimeout(() => setStatus('idle'), 3000)
-    }
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...formData, hp: '' }), // hp = honeypot
+    })
+
+    if (!res.ok) throw new Error('Request failed')
+
+    setStatus('success')
+    setFormData({ name: '', email: '', subject: '', message: '' })
+    setTimeout(() => setStatus('idle'), 3000)
+  } catch (error) {
+    setStatus('error')
+    setTimeout(() => setStatus('idle'), 3000)
   }
+}
+
 
   const contactInfo = [
     {
@@ -135,6 +142,13 @@ export default function Contact() {
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2" data-id="name-label">
                       Full Name *
                     </label>
+                    <input
+                      type="text"
+                      name="hp"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      className="hidden"
+                    />
                     <input
                       type="text"
                       id="name"
