@@ -18,7 +18,7 @@ export default function Education() {
       duration: 'Sep 2016 - Jul 2018',
       grade: 'Grade: A+',
       description: 'Pre-engineering with focus on mathematics, physics, and computer science fundamentals.',
-      image: '/images/kips.png'
+      image: '/images/kips-campus.jpg'
     }
   ]
 
